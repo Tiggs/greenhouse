@@ -84,6 +84,14 @@ def set_attendance(discord_id: str, username: str, count: int) -> int:
         return count
 
 
+def reset_all() -> int:
+    """Delete all attendance records. Returns the number of rows deleted."""
+    with _db() as conn:
+        count = conn.execute("SELECT COUNT(*) FROM members").fetchone()[0]
+        conn.execute("DELETE FROM members")
+        return count
+
+
 def get_leaderboard(limit: int = 10) -> list[dict]:
     with _db() as conn:
         rows = conn.execute(

@@ -1,9 +1,9 @@
 # --- Server Config ---
-GUILD_ID = 0  # Replace with your Discord server ID (right-click server > Copy Server ID)
+GUILD_ID = 294133307611021312  # Replace with your Discord server ID (right-click server > Copy Server ID)
 
 # Channel where rank-up announcements are posted.
 # Right-click the channel > Copy Channel ID.
-ANNOUNCEMENT_CHANNEL_ID = 0
+ANNOUNCEMENT_CHANNEL_ID = 1045051962619592804
 
 # --- Role Milestones ---
 # Maps attendance count -> role name in your Discord server.
@@ -11,7 +11,7 @@ ANNOUNCEMENT_CHANNEL_ID = 0
 # removing lower-tier milestone roles automatically.
 # Make sure these roles exist in your server before running the bot.
 ROLE_MILESTONES = {
-    0:  "Seed",
+    1:  "Seed",
     6:  "Sprout",
     11: "Seedling",
     16: "Sapling",
